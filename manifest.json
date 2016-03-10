@@ -1,0 +1,11 @@
+{
+  "name": "Fun01確定並觀看",
+  "description": "不想再看到\"確定並觀看\"按鈕？趕快裝這個外掛自動進入觀看吧！",
+  "version": "1.1",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "js": ["jquery.min.js", "content.js"],
+    "matches": ["*://www.fun01.cc/*", "*://fun01.cc/*"]
+  }],  
+  "icons": { "16": "icon16.png","32": "icon32.png", "64": "icon64.png", "128": "icon128.png" }
+}
