@@ -1,15 +1,23 @@
 {
-  "name": "Fun01確定並觀看",
-  "description": "不想再看到\"確定並觀看\"按鈕？趕快裝這個外掛自動進入觀看吧！",
-  "version": "1.2",
-  "manifest_version": 2,
-  "content_scripts": [{
-    "js": ["js/jquery.min.js", "js/content.js"],
-    "matches": ["*://www.fun01.cc/*", "*://fun01.cc/*"]
-  }],
-  "browser_action": {
-    "default_icon": "img/icon32.png",
-    "default_popup": "popup.html"
-  },
-  "icons": { "16": "img/icon16.png","32": "img/icon32.png", "64": "img/icon64.png", "128": "img/icon128.png" }
+    "name": "Fun01確定並觀看",
+    "description": "不想再看到\"確定並觀看\"按鈕？趕快裝這個外掛自動進入觀看吧！(現在支援UP01.cc)",
+    "version": "1.3",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "js": ["js/jquery.min.js", "js/fun01.js"],
+        "matches": ["*://www.fun01.cc/*", "*://fun01.cc/*"]
+    }, {
+        "js": ["js/jquery.min.js", "js/up01.js"],
+        "matches": ["*://www.up01.cc/*", "*://up01.cc/*"]
+    }],
+    "browser_action": {
+        "default_icon": "img/icon32.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "img/icon16.png",
+        "32": "img/icon32.png",
+        "64": "img/icon64.png",
+        "128": "img/icon128.png"
+    }
 }
